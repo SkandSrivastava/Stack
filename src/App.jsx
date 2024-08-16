@@ -1,4 +1,4 @@
-import { LayoutDashboard, Home, StickyNote, Layers, Flag, Calendar, LifeBuoy, Settings } from "lucide-react";
+import { User, Calendar, LifeBuoy, Settings, Link, Clock, LogOut } from "lucide-react";
 import Sidebar, { SidebarItem } from "./components/Sidebar"
 
 function App() {
@@ -7,15 +7,14 @@ function App() {
     <>
       <div className="flex">
         <Sidebar>
-          <SidebarItem icon={<Home size={20} />} text="Home" alert />
-          <SidebarItem icon={<LayoutDashboard size={20} />} text="Dashboard" active />
-          <SidebarItem icon={<StickyNote size={20} />} text="Projects" alert />
-          <SidebarItem icon={<Calendar size={20} />} text="Calendar" />
-          <SidebarItem icon={<Layers size={20} />} text="Tasks" />
-          <SidebarItem icon={<Flag size={20} />} text="Reporting" />
+          <SidebarItem icon={<User size={20} />} text="My Profile" />
+          <SidebarItem icon={<Link size={20} />} text="Event Type" />
+          <SidebarItem icon={<Calendar size={20} />} text="Bookings" />
+          <SidebarItem icon={<Clock size={20} />} text="Availability" />
           <hr className="my-3" />
           <SidebarItem icon={<Settings size={20} />} text="Settings" />
           <SidebarItem icon={<LifeBuoy size={20} />} text="Help" />
+          <SidebarItem icon={<LogOut size={20} />} text="Logout" />
         </Sidebar>
       </div>
     </>
